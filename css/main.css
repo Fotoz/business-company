@@ -57,7 +57,7 @@ header {
 ul {
     list-style: none;
 }
-li {
+header li {
     display: inline;
 }
 header a {
@@ -74,10 +74,21 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
+img[alt="logo"] {
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /***========== FORM ==========***/
 #form {
     background: #709dca;
-    padding-bottom: 350px;
+    padding-bottom: 100px;
 }
 #form h1, #form h4 {
     color: #fff;
@@ -99,6 +110,9 @@ a:focus {
     height: 45px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
+}
+#form i {
     cursor: pointer;
 }
 #form input:focus, #form button:focus {
@@ -152,6 +166,15 @@ button[type="submit"] {
 *:focus:-ms-input-placeholder {
     color: transparent;
 }
+.fotorama {
+    margin-top: 70px;
+
+}
+.fotorama img {
+    border: 2px solid #868686 !important;
+    border-radius: 5px !important;
+
+}
 /***========== SERVICES ==========***/
 #services {
     padding-bottom: 90px;
@@ -163,7 +186,7 @@ button[type="submit"] {
 #services h2 {
     font: 2.143em 'GothamBlack';
     text-transform: uppercase;
-    padding-top: 165px;
+    padding-top: 110px;
     margin-bottom: 0;
 }
 #services h4 {
@@ -177,7 +200,7 @@ button[type="submit"] {
     color: #394b50;
     padding-left: 80px;
 }
-h3+p {
+#services p {
     font: 0.929em 'LatoRegular';
     color: #7b7b7b;
     padding: 0 70px 45px 80px;
@@ -228,6 +251,7 @@ h3+p {
     text-transform: uppercase;
     font: 1em 'LatoRegular';
     border: 1px solid #e7ad48;
+    border-radius: 3px;
     padding: 15px 30px;
     margin-left: 65px;
     transition: all .3s;
@@ -235,7 +259,88 @@ h3+p {
 #about_us a:hover {
     font-size: 1.1em;
 }
+/***========== PRICE ==========***/
+#price {
+    background: #e7edf3;
+    padding-bottom: 170px;
+    text-align: center;
+}
+#price h2 {
+    font: 2.143em 'GothamBlack';
+    text-transform: uppercase;
+    color: #394b50;
+    padding-top: 110px;
+    margin-bottom: 0;
+}
+#price h4 {
+    font: 1.2em 'LatoRegular';
+    color: #75888d;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+div[class^="set"] {
+    background: #fff;
+    border: 1px solid #ccd5df;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    width: 95%;
+    transition: all .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+div[class^="set"]:hover {
+    background: #709dca;
+    width: 100%;
+    padding-top: 25px;
+    margin-top: -15px;
+}
+div[class^="set"]:hover h3,
+div[class^="set"]:hover p,
+div[class^="set"]:hover li {
+    color: #fff !important;
+}
+#price h3, #price p {
+    color: #818b95;
+}
+#price h3 {
+    font: 1.786em 'LatoLight';
+    padding-top: 30px;
+}
+#price p.cost {
+    font: 4.286em 'LatoBold';
+    color: #ffbb42;
+    margin: 0;
+}
+#price p {
+    font: 1em 'LatoLight';
+    margin: 0;
+}
+#price ul {
+    font: 0.964em 'LatoRegular';
+    color: #b5bbc1;
+    padding: 0;
+    margin: 40px 30px;
+}
+#price li {
+    padding: 10px 0;
+    border-top: 1px solid #e2e9f0;
+}
+#price a {
+    font: 1em 'LatoRegular';
+    color: #fff;
+    background: #ffbb42;
+    padding: 12px 22px;
+    border-radius: 3px;
+}
 /***========== SECTION ==========***/
+
+
+
+/***========== SECTION ==========***/
+
+
+
+/***========== SECTION ==========***/
+
 
 
 /***========== MEDIA ==========***/

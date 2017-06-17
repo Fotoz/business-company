@@ -7,6 +7,7 @@
         <link rel="icon" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
         <link rel="stylesheet" href="css/main.css">
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>-->
     </head>
@@ -21,7 +22,7 @@
                                     <li><a href="#form">Home</a>
                                     <li><a href="#services">Service</a>
                                     <li><a href="#about_us">About us</a>
-                                    <li><a href="#">Pricing table</a>
+                                    <li><a href="#price">Pricing table</a>
                                     <li><a href="#">How it work</a>
                                     <li><a href="#">Happy clients</a>
                                     <li><a href="#">Contact us</a>
@@ -36,12 +37,12 @@
             <div class="container">
                 <h1>Boost up your local business</h1>
                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</h4>   
-                <row>
+                <div class="row">
                     <form name="request" action="send.php" method="post">
                         <div class="col-md-3 col-sm-6">
                             <input type="text" name="name" placeholder="Full Name">
                             <i class="fa fa-user" aria-hidden="true"></i>
-                        </div>
+                        </div>    
                         <div class="col-md-3 col-sm-6">
                             <input type="email" name="email" placeholder="Email Address">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -52,16 +53,27 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <button type="submit" name="send">Request a quote</button>
-                        </div>
+                        </div> 
                     </form>
-                </row>
+                 </div> 
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                        <div class="fotorama" data-width="100%" data-loop="true" data-autoplay="3000" data-transition="crossfade" data-stopautoplayontouch="false" data-arrows="false">
+                            <img src="images/slider/slide_1.jpg" alt="slide">
+                            <img src="images/slider/slide_2.jpg" alt="slide">
+                            <img src="images/slider/slide_3.jpg" alt="slide">
+                            <img src="images/slider/slide_4.jpg" alt="slide">
+                            <img src="images/slider/slide_5.jpg" alt="slide">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
         <section id="services">
             <div class="container">
                 <h2>Our services</h2>
-                <h4>Lorem Ipsum is simply dummy Business industry.</h4>
+                <h4>Lorem Ipsum is simply dummy Business industry</h4>
                 <div class="row">
                     <div class="col-md-6">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -113,17 +125,66 @@
             </div>
         </section>
         
+        <section id="price">
+            <div class="container">
+                <h2>Choose your price</h2>
+                <h4>Lorem Ipsum is simply dummy text of the printing typesetting</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="set_1 center-block">
+                            <h3>Basic plan</h3>
+                            <p class="cost"><sup>$</sup>22</p>
+                            <p>Per month</p>
+                            <ul class="op">
+                                <li>1 account</li>
+                                <li>8 hour support</li>
+                                <li>Custom cloud services</li>
+                            </ul>
+                            <a href="#">Get started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="set_2 center-block">
+                            <h3>Premium plan</h3>
+                            <p class="cost"><sup>$</sup>42</p>
+                            <p>Per month</p>
+                            <ul>
+                                <li>2 account</li>
+                                <li>100mb storage</li>
+                                <li>Custom cloud services</li>
+                            </ul>
+                            <a href="#">Get started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="set_3 center-block">
+                            <h3>Gold plan</h3>
+                            <p class="cost"><sup>$</sup>62</p>
+                            <p>Per month</p>
+                            <ul>
+                                <li>8 account</li>
+                                <li>24 hour support</li>
+                                <li>Custom cloud services</li>
+                            </ul>
+                            <a href="#">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     <!-- jquery -->    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- fotorama -->    
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <!-- smooth scrolling -->  
         <script>
-            $(document).ready(function() {
-            $('a[href^="#"]').click(function(){
-            var el = $(this).attr('href');
-            $('body').animate({
-            scrollTop: $(el).offset().top}, 1000);
-            return false;
-            });
+            var $page = $('html, body');
+            $('a[href*="#"]').click(function() {
+                $page.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 800);
+                return false;
             });
         </script>
     </body>
