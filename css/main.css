@@ -49,6 +49,10 @@ header {
     font: 0.964em 'LatoRegular';
     text-transform: uppercase;
     padding: 25px 0 20px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 ul {
     list-style: none;
@@ -75,19 +79,19 @@ a:focus {
     background: #709dca;
     padding-bottom: 350px;
 }
-#form h1, #form p {
+#form h1, #form h4 {
     color: #fff;
     text-align: center;
 }
 #form h1 {
     font: 2.5em 'GothamBlack';
     text-transform: uppercase;
-    padding-top: 75px;
+    padding-top: 170px;
     margin-bottom: 0;
 }
-#form p {
+#form h4 {
     font: 1.2em 'LatoLight';
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-top: 0;
 }
 #form input, #form button {
@@ -149,7 +153,10 @@ button[type="submit"] {
     color: transparent;
 }
 /***========== SERVICES ==========***/
-#services h2, h2+p {
+#services {
+    padding-bottom: 90px;
+}
+#services h2, #services h4 {
     color: #394b50;
     text-align: center;
 }
@@ -159,9 +166,9 @@ button[type="submit"] {
     padding-top: 165px;
     margin-bottom: 0;
 }
-h2+p {
+#services h4 {
     font: 1.2em 'LatoRegular';
-    padding-bottom: 53px;
+    padding-bottom: 50px;
     margin-top: 0;
 }
 #services h3 {
@@ -188,13 +195,47 @@ h3+p {
     font-size: 50px;
     color: #709dca;
 }
-
+/***========== ABOUT_US ==========***/
+#about_us {
+    background: #ffc155;
+    position: relative;
+    padding-bottom: 180px;
+}
+#about_us::before {
+    content: '';
+    background: url(../images/table.jpg) no-repeat center center / cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+}
+#about_us h2 {
+    font: 2.143em 'GothamBlack';
+    text-transform: uppercase;
+    color: #fff;
+    padding: 135px 0 0 65px;
+    margin-bottom: 0;
+}
+#about_us p {
+    font: 0.929em 'LatoRegular';
+    color: #fff;
+    padding: 0 0 50px 65px;
+    line-height: 25px;
+}
+#about_us a {
+    color: #fff;
+    text-transform: uppercase;
+    font: 1em 'LatoRegular';
+    border: 1px solid #e7ad48;
+    padding: 15px 30px;
+    margin-left: 65px;
+    transition: all .3s;
+}
+#about_us a:hover {
+    font-size: 1.1em;
+}
 /***========== SECTION ==========***/
-
-
-
-/***========== SECTION ==========***/
-
 
 
 /***========== MEDIA ==========***/

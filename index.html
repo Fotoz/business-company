@@ -18,9 +18,9 @@
                             <img src="images/logo.png" alt="logo">
                             <nav class="pull-right">
                                 <ul>
-                                    <li><a href="#">Home</a>
-                                    <li><a href="#">Service</a>
-                                    <li><a href="#">About us</a>
+                                    <li><a href="#form">Home</a>
+                                    <li><a href="#services">Service</a>
+                                    <li><a href="#about_us">About us</a>
                                     <li><a href="#">Pricing table</a>
                                     <li><a href="#">How it work</a>
                                     <li><a href="#">Happy clients</a>
@@ -35,7 +35,7 @@
         <section id="form">
             <div class="container">
                 <h1>Boost up your local business</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>   
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</h4>   
                 <row>
                     <form name="request" action="send.php" method="post">
                         <div class="col-md-3 col-sm-6">
@@ -61,7 +61,7 @@
         <section id="services">
             <div class="container">
                 <h2>Our services</h2>
-                <p>Lorem Ipsum is simply dummy Business industry.</p>
+                <h4>Lorem Ipsum is simply dummy Business industry.</h4>
                 <div class="row">
                     <div class="col-md-6">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -100,7 +100,31 @@
                 </div>
             </div>
         </section>
+        
+        <section id="about_us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <h2>About us</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     <!-- jquery -->    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- smooth scrolling -->  
+        <script>
+            $(document).ready(function() {
+            $('a[href^="#"]').click(function(){
+            var el = $(this).attr('href');
+            $('body').animate({
+            scrollTop: $(el).offset().top}, 1000);
+            return false;
+            });
+            });
+        </script>
     </body>
 </html>
