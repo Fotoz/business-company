@@ -35,15 +35,6 @@
          url('../fonts/GothamBlack.ttf') format('truetype'),
          url('../fonts/GothamBlack.svg#GothamBlack') format('svg');
 }
-@font-face {
-    font-family: 'brandongrotesquebold';
-    src: url../('fonts/brandongrotesquebold.eot');
-    src: url../('fonts/brandongrotesquebold.eot') format('embedded-opentype'),
-         url../('fonts/brandongrotesquebold.woff2') format('woff2'),
-         url../('fonts/brandongrotesquebold.woff') format('woff'),
-         url../('fonts/brandongrotesquebold.ttf') format('truetype'),
-         url../('fonts/brandongrotesquebold.svg#brandongrotesquebold') format('svg');
-}
 /***========== HEADER ==========***/
 header {
     font: 0.964em 'LatoRegular';
@@ -107,20 +98,20 @@ h4 {
     padding-bottom: 50px;
     margin-top: 0;
 }
-#form input, #form button {
+#form input, #form button, #contact_us input, #contact_us button {
     width: 100%;
     height: 45px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
-#form i {
+#form i, #contact_us i {
     cursor: pointer;
 }
-#form input:focus, #form button:focus {
+input:focus, button:focus {
     outline: none;
 }
-#form input {
+input {
     font: 0.929em 'LatoRegular';
     color: #868686;
     text-indent: 40px;
@@ -170,12 +161,10 @@ button[type="submit"] {
 }
 .fotorama {
     margin-top: 70px;
-
 }
 .fotorama img {
     border: 2px solid #868686 !important;
     border-radius: 5px !important;
-
 }
 /***========== SERVICES ==========***/
 #services {
@@ -259,7 +248,7 @@ button[type="submit"] {
 #price h4 {
     color: #75888d;
 }
-div[class^="set"] {
+.set {
     background: #fff;
     border: 1px solid #ccd5df;
     border-radius: 3px;
@@ -268,15 +257,15 @@ div[class^="set"] {
     width: 95%;
     transition: all .4s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-div[class^="set"]:hover {
+.set:hover {
     background: #709dca;
     width: 100%;
     padding-bottom: 65px;
     margin-top: -15px;
 }
-div[class^="set"]:hover h3,
-div[class^="set"]:hover p,
-div[class^="set"]:hover li {
+.set:hover h3,
+.set:hover p,
+.set:hover li {
     color: #fff !important;
 }
 #price h3, #price p {
@@ -345,14 +334,13 @@ div[class^="set"]:hover li {
     background: #ffbb42;
     padding: 15px 27px;
     border-radius: 3px;
-}
-.work_btn {
-    margin-top: 90px;
+    display: table;
+    margin: 75px auto 0;
 }
 /***========== CLIENTS ==========***/
 #clients {
     background: #ffc155;
-    padding: 110px 0 110px;
+    padding: 110px 0;
 }
 #clients h2, #clients h4 {
     color: #fff;
@@ -382,11 +370,76 @@ div[class^="set"]:hover li {
 .name {
     color: #f6772c;
 }
-
-/***========== SECTION ==========***/
-
-
-
+/***========== CONTACT_US ==========***/
+#contact_us {
+    text-align: center;
+    padding: 110px 0 60px;
+}
+#contact_us h2, #contact_us h4 {
+    color: #394b50;
+}
+#contact_us h4 {
+    padding-bottom: 13px;
+}
+#contact_us input, #contact_us button {
+    border: 1px solid #cbcbcb;
+}
+.map_bg {
+    background: url(../images/map.png) no-repeat center/contain;
+    margin: 50px;
+    padding: 50px 0 150px;
+}
+address {
+    font: normal 0.929em 'LatoBold';
+    color: #aeb7ba;
+    background: #394b50;
+    border-radius: 50%;
+    display: table;
+    margin: 0 auto;
+    padding: 58px 70px;
+}
+address p {
+margin: 0 0 10px;
+}
+address p:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+address p:last-child {
+    color: #ffbb42;
+}
+#contact_us .fa-phone {
+    position: static;
+    cursor: auto;
+    font-size: 0.9em;
+    color: #394b50;
+    padding-right: 15px;
+}
+.phone {
+    font: 1.6em 'LatoRegular';
+    color: #394b50;
+}
+.social {
+    font-size: 1.7em;
+    color: #709dca;
+    margin-right: 15px;
+}
+.social:last-child {
+    margin-right: 0;
+}
+.social:hover {
+    color: #ffc155;
+}
+/***========== FOOTER ==========***/
+footer{
+    background: #709dca;
+    text-align: center;
+    font: 1em 'LatoRegular';
+    color: #fff;
+    padding: 5px 0;
+    word-spacing: 1px;
+}
 /***========== MEDIA ==========***/
 @media screen and (max-width:1200px) {
     
