@@ -74,21 +74,14 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
-img[alt="logo"] {
-    animation: spin 4s linear infinite;
-}
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.fa-eercast {
+    font-size: 47px;
+    color: #f6772c;
 }
 /***========== FORM ==========***/
 #form {
     background: #709dca;
-    padding-bottom: 100px;
+    padding: 170px 0 100px;
 }
 #form h1, #form h4 {
     color: #fff;
@@ -97,12 +90,21 @@ img[alt="logo"] {
 #form h1 {
     font: 2.5em 'GothamBlack';
     text-transform: uppercase;
-    padding-top: 170px;
     margin-bottom: 0;
 }
 #form h4 {
     font: 1.2em 'LatoLight';
     padding-bottom: 10px;
+    margin-top: 0;
+}
+h2 {
+    font: 2.143em 'GothamBlack';
+    text-transform: uppercase;
+    margin-bottom: 0; 
+}
+h4 {
+    font: 1.2em 'LatoLight';
+    padding-bottom: 50px;
     margin-top: 0;
 }
 #form input, #form button {
@@ -177,22 +179,11 @@ button[type="submit"] {
 }
 /***========== SERVICES ==========***/
 #services {
-    padding-bottom: 90px;
+    padding: 110px 0 90px;
 }
 #services h2, #services h4 {
     color: #394b50;
     text-align: center;
-}
-#services h2 {
-    font: 2.143em 'GothamBlack';
-    text-transform: uppercase;
-    padding-top: 110px;
-    margin-bottom: 0;
-}
-#services h4 {
-    font: 1.2em 'LatoRegular';
-    padding-bottom: 50px;
-    margin-top: 0;
 }
 #services h3 {
     font: 1.143em 'LatoBold';
@@ -234,11 +225,8 @@ button[type="submit"] {
     right: 50%;
 }
 #about_us h2 {
-    font: 2.143em 'GothamBlack';
-    text-transform: uppercase;
     color: #fff;
     padding: 135px 0 0 65px;
-    margin-bottom: 0;
 }
 #about_us p {
     font: 0.929em 'LatoRegular';
@@ -262,21 +250,14 @@ button[type="submit"] {
 /***========== PRICE ==========***/
 #price {
     background: #e7edf3;
-    padding-bottom: 170px;
+    padding: 110px 0 170px;
     text-align: center;
 }
 #price h2 {
-    font: 2.143em 'GothamBlack';
-    text-transform: uppercase;
     color: #394b50;
-    padding-top: 110px;
-    margin-bottom: 0;
 }
 #price h4 {
-    font: 1.2em 'LatoRegular';
     color: #75888d;
-    padding-bottom: 50px;
-    margin-top: 0;
 }
 div[class^="set"] {
     background: #fff;
@@ -290,7 +271,7 @@ div[class^="set"] {
 div[class^="set"]:hover {
     background: #709dca;
     width: 100%;
-    padding-top: 25px;
+    padding-bottom: 65px;
     margin-top: -15px;
 }
 div[class^="set"]:hover h3,
@@ -331,13 +312,76 @@ div[class^="set"]:hover li {
     padding: 12px 22px;
     border-radius: 3px;
 }
-/***========== SECTION ==========***/
-
-
-
-/***========== SECTION ==========***/
-
-
+/***========== WORK ==========***/
+#work {
+    text-align: center;
+    padding: 110px 0 160px;
+}
+#work h2, #work h4, #work h3 {
+    color: #394b50;
+}
+.fa-headphones,
+.fa-unlock-alt,
+.fa-cloud-upload,
+.fa-thumbs-up {
+    font-size: 5.143em;
+    color: #709dca;
+    padding: 33px 0 65px;
+}
+#work h3 {
+    font: 1.429em 'LatoBold';
+    text-transform: uppercase;
+}
+#work p {
+    font: 0.929em 'LatoRegular';
+    color: #7b7b7b;
+    padding: 0 30px;
+    line-height: 22px;
+}
+#work a {
+    font: 1em 'LatoRegular';
+    color: #fff;
+    text-transform: uppercase;
+    background: #ffbb42;
+    padding: 15px 27px;
+    border-radius: 3px;
+}
+.work_btn {
+    margin-top: 90px;
+}
+/***========== CLIENTS ==========***/
+#clients {
+    background: #ffc155;
+    padding: 110px 0 110px;
+}
+#clients h2, #clients h4 {
+    color: #fff;
+    text-align: center;
+}
+.clients {
+    background: #fff;
+    border-radius: 3px;
+}
+.clients img {
+    border-radius: 50%;
+    width: 125px;
+    margin: 40px 30px;
+}
+.clients p {
+    font: 0.929em 'LatoRegular';
+    color: #7b7b7b;
+    line-height: 25px;
+    padding: 40px 50px 5px;
+}
+.clients h3 {
+    font: 1em 'LatoBold';
+    color: #99a9ae;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+}
+.name {
+    color: #f6772c;
+}
 
 /***========== SECTION ==========***/
 
