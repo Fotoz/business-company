@@ -1,4 +1,4 @@
-/***========== FONTS ==========***/
+/***====================  FONTS  ====================***/
 @font-face {
     font-family: 'LatoLight';
     src: url('../fonts/LatoLight.eot');
@@ -35,7 +35,7 @@
          url('../fonts/GothamBlack.ttf') format('truetype'),
          url('../fonts/GothamBlack.svg#GothamBlack') format('svg');
 }
-/***========== HEADER ==========***/
+/***====================  HEADER  ====================***/
 header {
     font: 0.964em 'LatoRegular';
     text-transform: uppercase;
@@ -69,7 +69,7 @@ a:focus {
     font-size: 47px;
     color: #f6772c;
 }
-/***========== FORM ==========***/
+/***====================  FORM  ====================***/
 #form {
     background: #709dca;
     padding: 170px 0 100px;
@@ -84,14 +84,12 @@ a:focus {
     margin-bottom: 0;
 }
 #form h4 {
-    font: 1.2em 'LatoLight';
     padding-bottom: 10px;
-    margin-top: 0;
 }
 h2 {
     font: 2.143em 'GothamBlack';
     text-transform: uppercase;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 h4 {
     font: 1.2em 'LatoLight';
@@ -166,7 +164,7 @@ button[type="submit"] {
     border: 2px solid #868686 !important;
     border-radius: 5px !important;
 }
-/***========== SERVICES ==========***/
+/***====================  SERVICES  ====================***/
 #services {
     padding: 110px 0 90px;
 }
@@ -198,7 +196,7 @@ button[type="submit"] {
     font-size: 50px;
     color: #709dca;
 }
-/***========== ABOUT_US ==========***/
+/***====================  ABOUT_US  ====================***/
 #about_us {
     background: #ffc155;
     position: relative;
@@ -236,7 +234,7 @@ button[type="submit"] {
 #about_us a:hover {
     font-size: 1.1em;
 }
-/***========== PRICE ==========***/
+/***====================  PRICE  ====================***/
 #price {
     background: #e7edf3;
     padding: 110px 0 170px;
@@ -301,7 +299,7 @@ button[type="submit"] {
     padding: 12px 22px;
     border-radius: 3px;
 }
-/***========== WORK ==========***/
+/***====================  WORK  ====================***/
 #work {
     text-align: center;
     padding: 110px 0 160px;
@@ -337,7 +335,7 @@ button[type="submit"] {
     display: table;
     margin: 75px auto 0;
 }
-/***========== CLIENTS ==========***/
+/***====================  CLIENTS  ====================***/
 #clients {
     background: #ffc155;
     padding: 110px 0;
@@ -370,7 +368,7 @@ button[type="submit"] {
 .name {
     color: #f6772c;
 }
-/***========== CONTACT_US ==========***/
+/***====================  CONTACT_US  ====================***/
 #contact_us {
     text-align: center;
     padding: 110px 0 60px;
@@ -399,7 +397,7 @@ address {
     padding: 58px 70px;
 }
 address p {
-margin: 0 0 10px;
+    margin: 0 0 10px;
 }
 address p:first-child {
     color: #fff;
@@ -431,28 +429,12 @@ address p:last-child {
 .social:hover {
     color: #ffc155;
 }
-/***========== FOOTER ==========***/
-footer{
+/***====================  FOOTER  ====================***/
+footer {
     background: #709dca;
     text-align: center;
     font: 1em 'LatoRegular';
     color: #fff;
     padding: 5px 0;
     word-spacing: 1px;
-}
-/***========== MEDIA ==========***/
-@media screen and (max-width:1200px) {
-    
-}
-@media screen and (max-width:992px) {
-    
-}
-@media screen and (max-width:768px) {
-    
-}
-@media screen and (max-width:480px) {
-    
-}
-@media screen and (max-width:320px) {
-    
 }
