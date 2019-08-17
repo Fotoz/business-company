@@ -68,6 +68,9 @@
     #form {
         padding: 35px 0 70px;
     }
+    input {
+        font-size: 1.143em;
+    }
     #form input[type="text"],
     #form input[type="email"],
     #contact_us input[type="text"],
